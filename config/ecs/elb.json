@@ -1,0 +1,18 @@
+{
+  "LoadBalancerName": "plinyServiceELB",
+    "Listeners": [
+    {
+      "Protocol": "tcp",
+      "LoadBalancerPort": 80,
+      "InstanceProtocol": "tcp",
+      "InstancePort": 5000,
+      "SSLCertificateId": ""
+    }
+  ],
+    "Subnets": [
+      "subnet-d5f579fe"
+      ],
+    "SecurityGroups": [
+      "sg-bd5f71d9"
+      ]
+}

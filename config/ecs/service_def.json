@@ -1,0 +1,14 @@
+{
+  "cluster": "staging_PlinyService",
+  "serviceName": "plinyService",
+  "taskDefinition": "pliny_api:1",
+  "desiredCount": 1,
+  "loadBalancers" : [
+    {
+      "loadBalancerName" : "plinyServiceELB",
+      "containerName" : "pliny_api",
+      "containerPort" : 5000
+    }
+  ],
+    "role": "ecsServiceRole"
+}
